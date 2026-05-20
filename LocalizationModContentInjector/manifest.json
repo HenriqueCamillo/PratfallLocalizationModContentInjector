@@ -1,9 +1,0 @@
-{
-  "Name": "Localization Mod Content Injector",
-  "Version": "1.0.0",
-  "Description": "Injects localization .csv to Pratfall Localization Mod",
-  "Author": "HenriqueCamillo",
-  "PackageName": "LocalizationModContentInjector.pck",
-  "Assembly": "PratfallLocalizationModContentInjector.dll",
-  "AutoLoad": false
-}

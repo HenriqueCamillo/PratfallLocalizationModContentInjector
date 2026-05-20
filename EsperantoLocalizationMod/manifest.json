@@ -1,0 +1,9 @@
+{
+  "Name": "Esperanto Localization Mod",
+  "Version": "0.0.1",
+  "Description": "Adds Esperanto as a language option",
+  "Author": "HenriqueCamillo",
+  "PackageName": "EsperantoLocalizationMod.pck",
+  "Assembly": "PratfallLocalizationModContentInjector.dll",
+  "AutoLoad": true
+}
