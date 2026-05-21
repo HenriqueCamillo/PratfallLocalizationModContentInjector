@@ -6,7 +6,7 @@ public static class ModUtils
 {
 	public const string MOD_CSV_NAMING_SUFFIX = "_Injected";
 	private const string MOD_DEBUG_PREFIX = "LOC_INJ_MOD: ";
-	private const string INJECTOR_MOD_NAME = "Esperanto Localization Mod";
+	private const string INJECTOR_MOD_NAME = "Esperanta Traduko";
 	private const string MAIN_MOD_NAME = "Pratfall Localization Mod";
 
 	private static bool _hasMainMod;

@@ -1,7 +1,7 @@
 {
-  "Name": "Esperanto Localization Mod",
+  "Name": "Esperanta Traduko",
   "Version": "0.0.1",
-  "Description": "Adds Esperanto as a language option",
+  "Description": "Aldonas esperantan tradukon al la ludo.",
   "Author": "HenriqueCamillo",
   "PackageName": "EsperantoLocalizationMod.pck",
   "Assembly": "PratfallLocalizationModContentInjector.dll",
