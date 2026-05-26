@@ -1,7 +1,7 @@
 {
-  "Name": "Esperanta Traduko",
-  "Version": "0.0.1",
-  "Description": "Aldonas esperantan tradukon al la ludo.",
+  "Name": "Esperanto",
+  "Version": "0.0.2",
+  "Description": "Aldonas esperantan tradukon al la ludo.\n\nTraduko de:\n- Henrique Camillo\n- Welton Gonçalves\n- Kun helpo de amikoj",
   "Author": "HenriqueCamillo",
   "PackageName": "EsperantoLocalizationMod.pck",
   "Assembly": "PratfallLocalizationModContentInjector.dll",
