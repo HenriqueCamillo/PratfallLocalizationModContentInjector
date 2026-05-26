@@ -5,5 +5,5 @@
   "Author": "HenriqueCamillo",
   "PackageName": "LocalizationModContentInjector.pck",
   "Assembly": "PratfallLocalizationModContentInjector.dll",
-  "AutoLoad": false
+  "AutoLoad": true
 }
