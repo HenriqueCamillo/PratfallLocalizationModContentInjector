@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using Godot;
 
 public static class ModUtils
@@ -29,33 +27,16 @@ public static class ModUtils
 		bool hasFoundInjectorModPath = false;
 		bool hasFoundMainModPath = false;
 		
-		Type modManagerType = null;
-		foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
+		foreach (ModManifest mod in ModManager.Mods)
 		{
-			modManagerType = assembly.GetType("ModManager");
-			if (modManagerType != null) 
-				break;
-		}
-
-		var modsProperty = modManagerType.GetProperty("Mods");
-		var modsList = modsProperty.GetValue(null) as IEnumerable;
-		foreach (var mod in modsList)
-		{
-			var nameProperty = mod.GetType().GetProperty("Name");
-	   		string modName = nameProperty?.GetValue(mod) as string;
-
-			if (!hasFoundInjectorModPath && modName == INJECTOR_MOD_NAME)
+			if (!hasFoundInjectorModPath && mod.Name == INJECTOR_MOD_NAME)
 			{
-				var dirProperty = mod.GetType().GetProperty("Directory");
-				_injectorModPath = dirProperty?.GetValue(mod) as string;
-			
+				_injectorModPath = mod.Directory;
 				hasFoundInjectorModPath = true;
 			}
-			else if (!hasFoundMainModPath && modName == MAIN_MOD_NAME)
+			else if (!hasFoundMainModPath && mod.Name == MAIN_MOD_NAME)
 			{
-				var dirProperty = mod.GetType().GetProperty("Directory");
-				_mainModPath = dirProperty?.GetValue(mod) as string;
-			
+				_mainModPath = mod.Directory;
 				hasFoundMainModPath = true;
 			}
 
